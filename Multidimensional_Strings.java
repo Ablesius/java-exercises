@@ -30,5 +30,13 @@ public class Multidimensional_Strings {
     texts[0][1] = "hi there!";
     System.out.println(texts[0][1]);
 
+    for (int row = 0; row < grid.length; row++) {
+        for (int col = 0; col < grid[row].length; col++) {
+            System.out.print(grid[row][col] + " ");   // printing all at the same line
+        }
+
+        System.out.println();   // empty line
+    }
+
 	}
 }
