@@ -22,10 +22,13 @@ public class Multidimensional_Strings {
         };
 
     for (int i = 0; i < grid.length; i++) {
-            System.out.println(grid[i][grid[i].length - i+1]);
+            System.out.println(grid[i][0]);
     }
 
-    // System.out.println(grid[1][grid[1].length - 1]);
+    String[][] texts = new String[2][3];
+
+    texts[0][1] = "hi there!";
+    System.out.println(texts[0][1]);
 
 	}
 }
