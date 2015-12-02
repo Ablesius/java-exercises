@@ -5,11 +5,6 @@ class Person {
     int age;
     boolean isTimeLord = false;
 
-    if (isTimeLord){
-        int regeneration;
-    }
-
-
     //instance methods
     void speak() {
         System.out.println("I am " + name + ". I am " + age + " years old.");
@@ -18,24 +13,33 @@ class Person {
         }
     }
 
-    void say_phrase() {
-        System.out.println("Allons-y!");
-    }
+
+    /* TODO:
+    *   create a test for which doctor it is, and let him say his
+    *    typical catch phrase
+    */
+
+    // use this as base for a real test of which doctor we have
+    //void say_phrase(int regeneration) {
+        //if (isTimeLord){
+            //int regeneration;
+            //System.out.println(phrase);
+        //}
+    //}
 
 }
 
 public class TimeLords {
 
     // this is a subroutine:
-    /* only needed for the first class in the programme */
-
+    // only needed for the first class in the programme
 	public static void main (String args[]) {
 
     Person Ten = new Person();
     Ten.name = "John Smith";
     Ten.age = 903;
     Ten.isTimeLord = true;
-    Ten.regeneration = 10;
+    // Ten.regeneration = 10;
     Ten.speak();
 
     Person Sarah = new Person();
