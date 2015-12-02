@@ -1,8 +1,28 @@
 class Person {
+
+    // instance variables
     String name;
     int age;
     boolean isTimeLord = false;
+
+    if (isTimeLord){
+        int regeneration;
     }
+
+
+    //instance methods
+    void speak() {
+        System.out.println("I am " + name + ". I am " + age + " years old.");
+        if (isTimeLord){
+            System.out.println("I am a Time Lord. Any questions? ");
+        }
+    }
+
+    void say_phrase() {
+        System.out.println("Allons-y!");
+    }
+
+}
 
 public class TimeLords {
 
@@ -11,23 +31,25 @@ public class TimeLords {
 
 	public static void main (String args[]) {
 
-    Person Tom = new Person();
-    Tom.name = "John Smith";
-    Tom.age = 903;
-    Tom.isTimeLord = true;
+    Person Ten = new Person();
+    Ten.name = "John Smith";
+    Ten.age = 903;
+    Ten.isTimeLord = true;
+    Ten.regeneration = 10;
+    Ten.speak();
 
     Person Sarah = new Person();
     Sarah.name = "Sarah Jane Smith";
     Sarah.age = 54;
 
     System.out.println(
-        "Person '" + Tom.name + "' is " + Tom.age + " years old."
+        "Person '" + Ten.name + "' is " + Ten.age + " years old."
     );
-    if (Tom.isTimeLord) {
-        System.out.println(Tom.name + " is a Time Lord.");
+    if (Ten.isTimeLord) {
+        System.out.println(Ten.name + " is a Time Lord.");
     }
     else {
-        System.out.println(Tom.name + " unfortunately is not a Time Lord.");
+        System.out.println(Ten.name + " unfortunately is not a Time Lord.");
         }
 
     System.out.println(
