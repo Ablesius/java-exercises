@@ -4,7 +4,7 @@ class Person {
     boolean isTimeLord = false;
     }
 
-public class RedFruit {
+public class TimeLords {
 
     // this is a subroutine:
     /* only needed for the first class in the programme */
